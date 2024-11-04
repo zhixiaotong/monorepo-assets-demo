@@ -1,0 +1,12 @@
+{
+  "name": "@app/a",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+  },
+  "peerDependencies": {
+    "vite": "^5.2.0",
+    "vue": "^3.0.0"
+  }
+}
