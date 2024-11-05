@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-// import { DynamicPublicDirectory } from 'vite-multiple-assets'
+import { DynamicPublicDirectory } from 'vite-multiple-assets'
 
 // https://vite.dev/config/
 // use vite-multiple-assets
 // export default defineConfig({
 //   publicDir: false,
 //   plugins: [
-//     vue(), 
+//     vue(),
 //     DynamicPublicDirectory([
 //       {
 //         input: 'apps/shared/assets/**',
@@ -21,9 +21,15 @@ import vue from '@vitejs/plugin-vue'
 
 // dont use vite-multiple-assets
 export default defineConfig({
-  publicDir: 'apps/shared/assets',
+  // publicDir: 'apps/shared/assets',
   plugins: [
-    vue()
+    vue(),
+    DynamicPublicDirectory([
+      'apps/shared/assets/**'
+      // same to  {input: 'apps/shared/assets/**', output:""}
+    ],{
+      cwd: process.cwd()
+    })
   ],
 })
 
