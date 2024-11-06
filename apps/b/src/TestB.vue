@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import {createUrl} from "@app/shared/utils";
 
-const picture1 = createUrl('/static/images/databases/AntDB.png')
+const picture1 = createUrl('/static/assets-b/database.png')
 const picture2 = createUrl('/static/svgs/analytics/bg.svg')
+
 </script>
 
 <template>

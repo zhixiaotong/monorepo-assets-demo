@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import {createUrl} from "@app/shared/utils";
-const picture1 = createUrl('/static/images/databases/clickhouse.png')
+const picture1 = createUrl('/static/assets-a/DB2.png')
 const picture2 = createUrl('/static/svgs/analytics/bg.svg')
 </script>
 
