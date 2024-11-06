@@ -4,6 +4,12 @@ import { DynamicPublicDirectory } from 'vite-multiple-assets'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: '0.0.0.0', // dev ip
+    port: 3000, // dev port
+    cors: true,
+    hmr: true
+  },
   plugins: [
     vue(),
     DynamicPublicDirectory([
