@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import {createUrl} from "@app/shared/utils";
 const picture1 = createUrl('/static/assets-a/DB2.png')
-const picture2 = createUrl('/static/svgs/analytics/bg.svg')
+const picture2 = createUrl('/static/shared/svgs/analytics/bg.svg')
 </script>
 
 <template>
@@ -24,6 +24,6 @@ img {
   border: 1px solid red;
   width: 300px;
   height: 300px;
-  background: url('/static/svgs/home/rect.svg') no-repeat 100%;
+  background: url('/static/shared/svgs/home/rect.svg') no-repeat 100%;
 }
 </style>

@@ -2,7 +2,7 @@
 import {createUrl} from "@app/shared/utils";
 
 const picture1 = createUrl('/static/assets-b/database.png')
-const picture2 = createUrl('/static/svgs/analytics/bg.svg')
+const picture2 = createUrl('/static/shared/svgs/analytics/bg.svg')
 
 </script>
 
@@ -26,6 +26,6 @@ img {
   border: 1px solid red;
   width: 100px;
   height: 100px;
-  background: url('/static/images/databases/CASSANDRA.png') no-repeat 100%;
+  background: url('/static/shared/images/databases/CASSANDRA.png') no-repeat 100%;
 }
 </style>

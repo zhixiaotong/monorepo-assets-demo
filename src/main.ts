@@ -7,7 +7,7 @@ import App from './App.vue'
 const app = createApp(App)
 
 const router = createRouter({
-    history: createWebHistory('/ts/'),
+    history: createWebHistory(import.meta.env.VITE_BASE_PATH),
     routes,
     strict: true,
     scrollBehavior: () => ({ left: 0, top: 0, behavior: 'smooth' })

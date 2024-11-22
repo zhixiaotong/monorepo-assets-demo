@@ -20,7 +20,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
   },
   "include": [
     "src/**/*.ts",
@@ -28,6 +27,7 @@
     "src/**/*.vue",
     "apps/**/*.ts",
     "apps/**/*.tsx",
-    "apps/**/*.vue"
+    "apps/**/*.vue",
+    "types/global.d.ts"
   ]
 }
